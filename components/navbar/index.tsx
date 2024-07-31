@@ -10,24 +10,24 @@ const Navbar = () => {
     return (
         <nav className='fixed top-0 left-0 z-50 h-[60px] w-full bg-background/60 backdrop-blur-md drop-shadow-2xl shadow-xl'>
             <Container className='flex items-center justify-between h-full'>
-                <Link href='/' className='text-base font-medium text-primary'>Matrix</Link>
+                <Link href='/' className='text-lg font-medium text-accent-primary'>Matrix</Link>
                 <NavigationMenu className='hidden sm:block'>
                     <NavigationMenuList className=''>
                         <NavigationMenuItem>
-                            <Link href={'/popular'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Popular</Link>
+                            <Link href={'/popular'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Popular</Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem >
                             <NavigationMenuTrigger className='text-base font-medium'>Category</NavigationMenuTrigger>
-                            <NavigationMenuContent className='flex flex-col items-start justify-start gap-2 p-2 min-w-[200px] bg-background text-black'>
-                                <Link href={'/men'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Men</Link>
-                                <Link href={'/women'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Women</Link>
-                                <Link href={'/shoes'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Shoes</Link>
-                                <Link href={'/pants'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Pants</Link>
-                                <Link href={'/shirt'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Shirt</Link>
+                            <NavigationMenuContent className='flex flex-col items-start justify-start gap-2 p-2 min-w-[200px] bg-background/60 text-background-foreground'>
+                                <Link href={'/men'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Men</Link>
+                                <Link href={'/women'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Women</Link>
+                                <Link href={'/shoes'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Shoes</Link>
+                                <Link href={'/pants'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Pants</Link>
+                                <Link href={'/shirt'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Shirt</Link>
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href={'/about'} className='text-base font-medium hover:text-primary transition-colors duration-300'>About</Link>
+                            <Link href={'/about'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>About</Link>
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
@@ -40,13 +40,13 @@ const Navbar = () => {
                     <SheetContent className='pt-16'>
                         <NavigationMenu>
                             <NavigationMenuList className='flex flex-col items-start gap-2'>
-                                <Link href={'/popular'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Popular</Link>
-                                <Link href={'/men'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Men</Link>
-                                <Link href={'/women'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Women</Link>
-                                <Link href={'/shoes'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Shoes</Link>
-                                <Link href={'/pants'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Pants</Link>
-                                <Link href={'/shirt'} className='text-base font-medium hover:text-primary transition-colors duration-300'>Shirt</Link>
-                                <Link href={'/about'} className='text-base font-medium hover:text-primary transition-colors duration-300'>About</Link>
+                                <Link href={'/popular'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Popular</Link>
+                                <Link href={'/men'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Men</Link>
+                                <Link href={'/women'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Women</Link>
+                                <Link href={'/shoes'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Shoes</Link>
+                                <Link href={'/pants'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Pants</Link>
+                                <Link href={'/shirt'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>Shirt</Link>
+                                <Link href={'/about'} className='text-base font-medium hover:text-accent-primary transition-colors duration-300'>About</Link>
                             </NavigationMenuList>
                         </NavigationMenu>
                     </SheetContent>
